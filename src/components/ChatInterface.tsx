@@ -66,23 +66,23 @@ const ChatInterface: React.FC = () => {
 
       toast({
         title: 'Request Processed',
-        description: 'Your request to Aelix agent was successful.',
+        description: 'Your request to Averix agent was successful.',
         variant: 'default',
       });
     } catch (error) {
-      console.error('Error from Monad agent service:', error);
+      console.error('Error from Arbitrum agent service:', error);
 
       const errorMessage: Message = {
         role: 'agent',
         content:
-          'Sorry, I encountered an error processing your request. Please check that the VITE_API_ENDPOINT environment variable is set correctly to point to the Aelix agent service.',
+          'Sorry, I encountered an error processing your request. Please check that the VITE_API_ENDPOINT environment variable is set correctly to point to the Averix agent service.',
         timestamp: new Date().toLocaleTimeString(),
       };
       setMessages((prevMessages) => [...prevMessages, errorMessage]);
 
       toast({
         title: 'Connection Error',
-        description: 'Failed to reach the Aelix agent service. Please check your VITE_API_ENDPOINT configuration.',
+        description: 'Failed to reach the Averix agent service. Please check your VITE_API_ENDPOINT configuration.',
         variant: 'destructive',
       });
     } finally {

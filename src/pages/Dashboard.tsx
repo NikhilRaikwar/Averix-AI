@@ -25,9 +25,9 @@ const Dashboard: React.FC = () => {
       <div className="pt-20 px-4 md:pt-24 pb-10">
         <div className="max-w-5xl mx-auto">
           <div className="mb-6 text-center">
-            <h1 className="text-3xl font-bold mb-2">Welcome to Aelix</h1>
+            <h1 className="text-3xl font-bold mb-2">Welcome to Averix</h1>
             <p className="text-muted-foreground">
-              Your AI assistant for Monad blockchain operations
+              Your AI assistant for Arbitrum blockchain operations
             </p>
           </div>
           <div className="mx-auto w-full max-w-4xl">
