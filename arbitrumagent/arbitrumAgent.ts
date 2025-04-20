@@ -882,7 +882,7 @@ const agentHandler: RequestHandler = async (req: Request, res: Response): Promis
 };
 
 // Setup Express with CORS and routes
-app.use(cors({ origin: "" }));
+app.use(cors({ origin: "https://averix-ai.vercel.app" }));
 app.use(bodyParser.json());
 app.get("/", (req: Request, res: Response) => {
   res.json({ message: "Welcome to Arbitrum AI Agent! Use POST /agent to interact with the agent." });
